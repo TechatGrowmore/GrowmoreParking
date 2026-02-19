@@ -274,12 +274,12 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
                       <p className="text-gray-600">
-                        <a href="tel:+911234567890" className="hover:text-primary-600 transition">
-                          +91 123 456 7890
+                        <a href="tel:+919321855377" className="hover:text-primary-600 transition">
+                          +91 93218 55377
                         </a>
                         <br />
-                        <a href="tel:+911234567891" className="hover:text-primary-600 transition">
-                          +91 123 456 7891
+                        <a href="tel:+919321554553" className="hover:text-primary-600 transition">
+                          +91 93215 54553
                         </a>
                       </p>
                     </div>
@@ -292,12 +292,12 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:info@growmoreparking.com" className="hover:text-primary-600 transition">
-                          info@growmoreparking.com
+                        <a href="mailto:sales@growmoreparking.com" className="hover:text-primary-600 transition">
+                          sales@growmoreparking.com
                         </a>
                         <br />
-                        <a href="mailto:support@growmoreparking.com" className="hover:text-primary-600 transition">
-                          support@growmoreparking.com
+                        <a href="mailto:ravin@growmoreparking.com" className="hover:text-primary-600 transition">
+                          ravin@growmoreparking.com
                         </a>
                       </p>
                     </div>
@@ -310,11 +310,11 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">WhatsApp</h3>
                       <p className="text-gray-600">
-                        <a href="https://wa.me/911234567890?text=Hello%20Growmore%20Parking%2C%20I%20need%20information%20about%20your%20valet%20parking%20services." 
+                        <a href="https://wa.me/919321855377?text=Hello%20Growmore%20Parking%2C%20I%20need%20information%20about%20your%20valet%20parking%20services." 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            className="hover:text-green-600 transition flex items-center gap-2">
-                          <span>+91 123 456 7890</span>
+                          <span>+91 93218 55377</span>
                         </a>
                         <span className="text-sm text-green-600 font-medium">Click to chat instantly</span>
                       </p>
@@ -343,7 +343,7 @@ export default function Contact() {
                 {/* Call and Email Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <a 
-                    href="tel:+911234567890"
+                    href="tel:+919321855377"
                     className="card bg-primary-50 hover:bg-primary-100 text-center border-2 border-primary-200 transition"
                   >
                     <FiPhone className="mx-auto mb-2 text-primary-600" size={32} />
@@ -351,7 +351,7 @@ export default function Contact() {
                     <div className="text-sm text-gray-600">Instant Support</div>
                   </a>
                   <a 
-                    href="mailto:info@growmoreparking.com"
+                    href="mailto:sales@growmoreparking.com"
                     className="card bg-primary-50 hover:bg-primary-100 text-center border-2 border-primary-200 transition"
                   >
                     <FiMail className="mx-auto mb-2 text-primary-600" size={32} />
@@ -362,7 +362,7 @@ export default function Contact() {
 
                 {/* WhatsApp Quick Contact - Featured */}
                 <a 
-                  href="https://wa.me/911234567890?text=Hello%20Growmore%20Parking%2C%20I%20need%20information%20about%20your%20valet%20parking%20services.%20Please%20help%20me." 
+                  href="https://wa.me/919321855377?text=Hello%20Growmore%20Parking%2C%20I%20need%20information%20about%20your%20valet%20parking%20services.%20Please%20help%20me." 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="card bg-green-50 hover:bg-green-100 text-center border-2 border-green-500 transition transform hover:scale-105 block"

@@ -53,11 +53,15 @@ export default function PrivacyPolicy() {
             <div className="bg-gray-50 p-6 rounded-lg mt-4">
               <p className="flex items-center gap-2 mb-2">
                 <FiMail className="text-primary-600" />
-                Email: info@growmoreparking.com
+                Sales: sales@growmoreparking.com
+              </p>
+              <p className="flex items-center gap-2 mb-2">
+                <FiMail className="text-primary-600" />
+                Email: ravin@growmoreparking.com
               </p>
               <p className="flex items-center gap-2">
                 <FiPhone className="text-primary-600" />
-                Phone: +91 123 456 7890
+                Phone: +91 93218 55377
               </p>
             </div>
           </div>

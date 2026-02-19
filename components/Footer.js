@@ -82,18 +82,28 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <FiPhone size={20} className="text-primary-400 flex-shrink-0" />
-                <a href="tel:+911234567890" className="hover:text-primary-400 transition text-sm">
-                  +91 123 456 7890
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+919321855377" className="hover:text-primary-400 transition text-sm">
+                    +91 93218 55377
+                  </a>
+                  <a href="tel:+919321554553" className="hover:text-primary-400 transition text-sm">
+                    +91 93215 54553
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <FiMail size={20} className="text-primary-400 flex-shrink-0" />
-                <a href="mailto:info@growmoreparking.com" className="hover:text-primary-400 transition text-sm">
-                  info@growmoreparking.com
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:sales@growmoreparking.com" className="hover:text-primary-400 transition text-sm">
+                    sales@growmoreparking.com
+                  </a>
+                  <a href="mailto:ravin@growmoreparking.com" className="hover:text-primary-400 transition text-sm">
+                    ravin@growmoreparking.com
+                  </a>
+                </div>
               </li>
               <li>
-                <a href="https://wa.me/911234567890?text=Hello%20Growmore%20Parking%2C%20I%20want%20to%20know%20more%20about%20your%20valet%20parking%20services." 
+                <a href="https://wa.me/919321855377?text=Hello%20Growmore%20Parking%2C%20I%20want%20to%20know%20more%20about%20your%20valet%20parking%20services." 
                    target="_blank" 
                    rel="noopener noreferrer"
                    className="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition mt-2 text-sm font-medium">

@@ -416,14 +416,14 @@ export default function Home() {
               <Link href="/contact" className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-primary-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Request Quote
               </Link>
-              <a href="https://wa.me/911234567890?text=Hello%20Growmore%20Parking%2C%20I%20would%20like%20to%20inquire%20about%20your%20professional%20valet%20parking%20services.%20Please%20provide%20more%20information." 
+              <a href="https://wa.me/919321855377?text=Hello%20Growmore%20Parking%2C%20I%20would%20like%20to%20inquire%20about%20your%20professional%20valet%20parking%20services.%20Please%20provide%20more%20information." 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  className="bg-green-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center gap-2">
                 <FaWhatsapp size={20} />
                 WhatsApp Us
               </a>
-              <Link href="tel:+911234567890" className="bg-primary-800 text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+              <Link href="tel:+919321855377" className="bg-primary-800 text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Call Now
               </Link>
             </div>

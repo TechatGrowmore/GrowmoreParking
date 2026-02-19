@@ -49,8 +49,8 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contact Information</h2>
             <p>
-              For questions about these Terms of Service, please contact us at info@growmoreparking.com or 
-              call +91 123 456 7890.
+              For questions about these Terms of Service, please contact us at sales@growmoreparking.com or 
+              ravin@growmoreparking.com, or call +91 93218 55377 / +91 93215 54553.
             </p>
           </div>
         </div>

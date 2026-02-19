@@ -20,7 +20,7 @@ const WhatsAppFloat = () => {
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
-  const whatsappNumber = '911234567890'
+  const whatsappNumber = '919321855377'
   const whatsappMessage = encodeURIComponent('Hello Growmore Parking! I would like to inquire about your valet parking services. Please assist me.')
 
   return (
