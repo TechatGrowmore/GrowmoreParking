@@ -1,0 +1,321 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" fill="none">
+  <!-- Background sky gradient -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="carBody1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="carBody2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e5e7eb"/>
+    </linearGradient>
+    <linearGradient id="podiumGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="uniformGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00000022"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="600" height="480" fill="url(#skyGrad)" rx="20"/>
+
+  <!-- Decorative circles -->
+  <circle cx="520" cy="60" r="70" fill="#bbf7d0" opacity="0.4"/>
+  <circle cx="80" cy="100" r="50" fill="#bbf7d0" opacity="0.3"/>
+  <circle cx="300" cy="30" r="40" fill="#86efac" opacity="0.2"/>
+
+  <!-- Road / Ground -->
+  <rect x="0" y="360" width="600" height="120" fill="url(#groundGrad)" rx="0"/>
+  <rect x="0" y="355" width="600" height="12" fill="#166534"/>
+  <!-- Road marking dashes -->
+  <rect x="60" y="385" width="60" height="6" fill="#ffffff" opacity="0.3" rx="3"/>
+  <rect x="170" y="385" width="60" height="6" fill="#ffffff" opacity="0.3" rx="3"/>
+  <rect x="280" y="385" width="60" height="6" fill="#ffffff" opacity="0.3" rx="3"/>
+  <rect x="390" y="385" width="60" height="6" fill="#ffffff" opacity="0.3" rx="3"/>
+  <rect x="490" y="385" width="60" height="6" fill="#ffffff" opacity="0.3" rx="3"/>
+
+  <!-- Parking spaces lines -->
+  <line x1="0" y1="356" x2="600" y2="356" stroke="#22c55e" stroke-width="2" opacity="0.5"/>
+
+  <!-- ===================== -->
+  <!-- VALET PODIUM (center) -->
+  <!-- ===================== -->
+  <g filter="url(#shadow)">
+    <!-- Podium base -->
+    <rect x="266" y="270" width="68" height="90" fill="url(#podiumGrad)" rx="6"/>
+    <!-- Podium top surface -->
+    <rect x="258" y="258" width="84" height="18" fill="#15803d" rx="4"/>
+    <!-- Podium front panel -->
+    <rect x="272" y="278" width="56" height="60" fill="#166534" rx="4"/>
+    <!-- Podium logo / V sign -->
+    <rect x="282" y="288" width="36" height="36" fill="#22c55e" rx="4"/>
+    <text x="300" y="312" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">V</text>
+  </g>
+
+  <!-- VALET Sign Board on pole -->
+  <g filter="url(#softShadow)">
+    <!-- Pole -->
+    <rect x="297" y="140" width="6" height="122" fill="#15803d" rx="3"/>
+    <!-- Sign board shadow -->
+    <rect x="224" y="118" width="152" height="56" fill="#14532d" rx="8" opacity="0.2" transform="translate(3,3)"/>
+    <!-- Sign board -->
+    <rect x="224" y="115" width="152" height="56" fill="url(#podiumGrad)" rx="8"/>
+    <!-- Sign board inner border -->
+    <rect x="230" y="121" width="140" height="44" fill="none" stroke="#22c55e" stroke-width="2" rx="5"/>
+    <!-- VALET text -->
+    <text x="300" y="147" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="4">VALET</text>
+    <!-- PARKING sub text -->
+    <text x="300" y="161" font-family="Arial, sans-serif" font-size="10" fill="#86efac" text-anchor="middle" letter-spacing="3">PARKING</text>
+    <!-- Small decorative stars -->
+    <circle cx="240" cy="143" r="3" fill="#86efac"/>
+    <circle cx="360" cy="143" r="3" fill="#86efac"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- CAR 1 (left - Green)  -->
+  <!-- ===================== -->
+  <g filter="url(#shadow)">
+    <!-- Car shadow -->
+    <ellipse cx="130" cy="360" rx="90" ry="8" fill="#000" opacity="0.15"/>
+    <!-- Car body lower -->
+    <rect x="48" y="320" width="164" height="42" fill="url(#carBody1)" rx="8"/>
+    <!-- Car body upper (cabin) -->
+    <path d="M80 320 Q88 280 112 272 L168 272 Q192 278 200 320 Z" fill="url(#carBody1)"/>
+    <!-- Car roof highlight -->
+    <path d="M92 318 Q98 285 116 278 L162 278 Q180 284 188 318 Z" fill="#22c55e" opacity="0.4"/>
+    <!-- Windows -->
+    <path d="M96 316 Q100 290 118 284 L152 284 Q164 290 168 316 Z" fill="#bfdbfe" opacity="0.85"/>
+    <!-- Window divider -->
+    <line x1="140" y1="284" x2="138" y2="316" stroke="#15803d" stroke-width="2.5"/>
+    <!-- Front windshield -->
+    <path d="M168 316 Q176 292 184 316 Z" fill="#bfdbfe" opacity="0.75"/>
+    <!-- Car front grill/bumper -->
+    <rect x="44" y="340" width="20" height="14" fill="#14532d" rx="4"/>
+    <!-- Headlight -->
+    <ellipse cx="50" cy="335" rx="7" ry="5" fill="#fef08a"/>
+    <ellipse cx="50" cy="335" rx="4" ry="3" fill="#fde047"/>
+    <!-- Rear of car -->
+    <rect x="196" y="340" width="18" height="14" fill="#14532d" rx="4"/>
+    <!-- Tail light -->
+    <ellipse cx="208" cy="335" rx="6" ry="4" fill="#fca5a5"/>
+    <!-- Wheels -->
+    <circle cx="88" cy="360" r="16" fill="#1f2937"/>
+    <circle cx="88" cy="360" r="9" fill="#6b7280"/>
+    <circle cx="88" cy="360" r="4" fill="#9ca3af"/>
+    <circle cx="172" cy="360" r="16" fill="#1f2937"/>
+    <circle cx="172" cy="360" r="9" fill="#6b7280"/>
+    <circle cx="172" cy="360" r="4" fill="#9ca3af"/>
+    <!-- Door line -->
+    <line x1="138" y1="322" x2="136" y2="360" stroke="#15803d" stroke-width="1.5" opacity="0.5"/>
+    <!-- Door handle -->
+    <rect x="148" y="334" width="14" height="4" fill="#15803d" rx="2"/>
+  </g>
+
+  <!-- ===================== -->
+  <!-- CAR 2 (right - White) -->
+  <!-- ===================== -->
+  <g filter="url(#shadow)">
+    <!-- Car shadow -->
+    <ellipse cx="468" cy="360" rx="90" ry="8" fill="#000" opacity="0.15"/>
+    <!-- Car body lower -->
+    <rect x="384" y="320" width="168" height="42" fill="url(#carBody2)" rx="8"/>
+    <!-- Car body upper (cabin) SUV style -->
+    <path d="M406 320 Q412 282 432 274 L520 274 Q535 280 540 320 Z" fill="url(#carBody2)"/>
+    <!-- Car roof highlight -->
+    <path d="M414 318 Q418 288 436 282 L516 282 Q524 288 530 318 Z" fill="#fff" opacity="0.5"/>
+    <!-- Windows -->
+    <path d="M420 316 Q424 292 438 286 L514 286 Q522 292 524 316 Z" fill="#bae6fd" opacity="0.85"/>
+    <!-- Window dividers -->
+    <line x1="472" y1="286" x2="470" y2="316" stroke="#d1d5db" stroke-width="2"/>
+    <!-- Front grill -->
+    <rect x="380" y="338" width="20" height="16" fill="#e5e7eb" rx="4"/>
+    <!-- Front grill lines -->
+    <line x1="385" y1="341" x2="395" y2="341" stroke="#9ca3af" stroke-width="1.5"/>
+    <line x1="385" y1="347" x2="395" y2="347" stroke="#9ca3af" stroke-width="1.5"/>
+    <!-- Headlight -->
+    <ellipse cx="386" cy="333" rx="7" ry="5" fill="#fef08a"/>
+    <ellipse cx="386" cy="333" rx="4" ry="3" fill="#fde047"/>
+    <!-- Rear -->
+    <rect x="548" y="338" width="18" height="16" fill="#e5e7eb" rx="4"/>
+    <!-- Tail light -->
+    <ellipse cx="558" cy="333" rx="6" ry="4" fill="#fca5a5"/>
+    <!-- Wheels -->
+    <circle cx="424" cy="360" r="16" fill="#1f2937"/>
+    <circle cx="424" cy="360" r="9" fill="#6b7280"/>
+    <circle cx="424" cy="360" r="4" fill="#9ca3af"/>
+    <circle cx="516" cy="360" r="16" fill="#1f2937"/>
+    <circle cx="516" cy="360" r="9" fill="#6b7280"/>
+    <circle cx="516" cy="360" r="4" fill="#9ca3af"/>
+    <!-- Door lines -->
+    <line x1="470" y1="322" x2="468" y2="360" stroke="#d1d5db" stroke-width="1.5"/>
+    <!-- Door handle -->
+    <rect x="480" y="334" width="14" height="4" fill="#d1d5db" rx="2"/>
+  </g>
+
+  <!-- ================================ -->
+  <!-- VALET ATTENDANT 1 (left of podium) -->
+  <!-- ================================ -->
+  <g filter="url(#softShadow)">
+    <!-- Shadow -->
+    <ellipse cx="228" cy="362" rx="18" ry="5" fill="#000" opacity="0.12"/>
+    <!-- Legs -->
+    <rect x="218" y="330" width="9" height="32" fill="#1f2937" rx="4"/>
+    <rect x="230" y="330" width="9" height="32" fill="#1f2937" rx="4"/>
+    <!-- Shoes -->
+    <ellipse cx="222" cy="362" rx="8" ry="4" fill="#111827"/>
+    <ellipse cx="235" cy="362" rx="8" ry="4" fill="#111827"/>
+    <!-- Shirt / Jacket -->
+    <rect x="212" y="275" width="34" height="58" fill="url(#uniformGrad)" rx="6"/>
+    <!-- Jacket lapels -->
+    <path d="M229 278 L222 295 L229 292 Z" fill="#15803d"/>
+    <path d="M229 278 L236 295 L229 292 Z" fill="#15803d"/>
+    <!-- White shirt -->
+    <rect x="225" y="278" width="8" height="30" fill="white" opacity="0.8" rx="2"/>
+    <!-- Buttons -->
+    <circle cx="229" cy="285" r="1.5" fill="#15803d"/>
+    <circle cx="229" cy="293" r="1.5" fill="#15803d"/>
+    <circle cx="229" cy="301" r="1.5" fill="#15803d"/>
+    <!-- Tie -->
+    <path d="M227 280 L232 280 L234 310 L229 316 L224 310 Z" fill="#166534"/>
+    <!-- Left arm (raised - holding key) -->
+    <path d="M212 285 Q198 272 190 268" stroke="url(#uniformGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Right arm (down) -->
+    <path d="M246 290 Q254 305 252 320" stroke="url(#uniformGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Car key in raised hand -->
+    <circle cx="188" cy="265" r="5" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="185" y="265" width="14" height="4" fill="#fbbf24" rx="2"/>
+    <circle cx="196" cy="267" r="2" fill="#d97706"/>
+    <!-- Neck -->
+    <rect x="224" y="258" width="10" height="18" fill="#fbbf24" rx="4"/>
+    <!-- Head -->
+    <circle cx="229" cy="248" r="20" fill="#fbbf24"/>
+    <!-- Hair -->
+    <path d="M210 242 Q215 224 229 224 Q243 224 248 242 Q238 230 229 232 Q220 230 210 242 Z" fill="#1f2937"/>
+    <!-- Eyes -->
+    <ellipse cx="222" cy="246" rx="3" ry="3.5" fill="white"/>
+    <ellipse cx="236" cy="246" rx="3" ry="3.5" fill="white"/>
+    <circle cx="223" cy="247" r="1.8" fill="#1f2937"/>
+    <circle cx="237" cy="247" r="1.8" fill="#1f2937"/>
+    <!-- Smile -->
+    <path d="M223 256 Q229 262 235 256" stroke="#1f2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Hat -->
+    <rect x="212" y="231" width="34" height="10" fill="#14532d" rx="3"/>
+    <rect x="218" y="218" width="22" height="14" fill="#14532d" rx="3"/>
+    <!-- Hat badge -->
+    <rect x="225" y="220" width="8" height="6" fill="#22c55e" rx="1"/>
+    <!-- Epaulette left -->
+    <rect x="210" y="277" width="12" height="5" fill="#fbbf24" rx="2"/>
+    <!-- Epaulette right -->
+    <rect x="236" y="277" width="12" height="5" fill="#fbbf24" rx="2"/>
+  </g>
+
+  <!-- ================================ -->
+  <!-- VALET ATTENDANT 2 (right of podium) -->
+  <!-- ================================ -->
+  <g filter="url(#softShadow)">
+    <!-- Shadow -->
+    <ellipse cx="372" cy="362" rx="18" ry="5" fill="#000" opacity="0.12"/>
+    <!-- Legs -->
+    <rect x="362" y="330" width="9" height="32" fill="#1f2937" rx="4"/>
+    <rect x="374" y="330" width="9" height="32" fill="#1f2937" rx="4"/>
+    <!-- Shoes -->
+    <ellipse cx="366" cy="362" rx="8" ry="4" fill="#111827"/>
+    <ellipse cx="379" cy="362" rx="8" ry="4" fill="#111827"/>
+    <!-- Shirt / Jacket -->
+    <rect x="356" y="275" width="34" height="58" fill="url(#uniformGrad)" rx="6"/>
+    <!-- Jacket lapels -->
+    <path d="M373 278 L366 295 L373 292 Z" fill="#15803d"/>
+    <path d="M373 278 L380 295 L373 292 Z" fill="#15803d"/>
+    <!-- White shirt -->
+    <rect x="369" y="278" width="8" height="30" fill="white" opacity="0.8" rx="2"/>
+    <!-- Buttons -->
+    <circle cx="373" cy="285" r="1.5" fill="#15803d"/>
+    <circle cx="373" cy="293" r="1.5" fill="#15803d"/>
+    <circle cx="373" cy="301" r="1.5" fill="#15803d"/>
+    <!-- Tie -->
+    <path d="M371 280 L376 280 L378 310 L373 316 L368 310 Z" fill="#166534"/>
+    <!-- Right arm (raised - welcoming gesture) -->
+    <path d="M390 287 Q404 272 412 265" stroke="url(#uniformGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Left arm (holds clipboard) -->
+    <path d="M356 290 Q346 305 348 318" stroke="url(#uniformGrad)" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- Clipboard -->
+    <rect x="332" y="310" width="22" height="28" fill="#f3f4f6" rx="3" stroke="#d1d5db" stroke-width="1.5"/>
+    <rect x="338" y="304" width="10" height="8" fill="#15803d" rx="2"/>
+    <line x1="336" y1="318" x2="350" y2="318" stroke="#9ca3af" stroke-width="1.5"/>
+    <line x1="336" y1="324" x2="350" y2="324" stroke="#9ca3af" stroke-width="1.5"/>
+    <line x1="336" y1="330" x2="345" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+    <!-- Waving hand -->
+    <circle cx="414" cy="262" r="7" fill="#fbbf24"/>
+    <!-- Fingers -->
+    <rect x="408" y="252" width="4" height="10" fill="#fbbf24" rx="2"/>
+    <rect x="414" y="250" width="4" height="12" fill="#fbbf24" rx="2"/>
+    <rect x="420" y="252" width="4" height="10" fill="#fbbf24" rx="2"/>
+    <!-- Neck -->
+    <rect x="368" y="258" width="10" height="18" fill="#fbbf24" rx="4"/>
+    <!-- Head -->
+    <circle cx="373" cy="248" r="20" fill="#fbbf24"/>
+    <!-- Hair -->
+    <path d="M354 240 Q358 222 373 222 Q388 222 392 240 Q382 228 373 230 Q364 228 354 240 Z" fill="#92400e"/>
+    <!-- Eyes -->
+    <ellipse cx="366" cy="246" rx="3" ry="3.5" fill="white"/>
+    <ellipse cx="380" cy="246" rx="3" ry="3.5" fill="white"/>
+    <circle cx="367" cy="247" r="1.8" fill="#1f2937"/>
+    <circle cx="381" cy="247" r="1.8" fill="#1f2937"/>
+    <!-- Smile -->
+    <path d="M367 256 Q373 263 379 256" stroke="#1f2937" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Hat -->
+    <rect x="356" y="231" width="34" height="10" fill="#14532d" rx="3"/>
+    <rect x="362" y="218" width="22" height="14" fill="#14532d" rx="3"/>
+    <!-- Hat badge -->
+    <rect x="369" y="220" width="8" height="6" fill="#22c55e" rx="1"/>
+    <!-- Epaulette left -->
+    <rect x="354" y="277" width="12" height="5" fill="#fbbf24" rx="2"/>
+    <!-- Epaulette right -->
+    <rect x="380" y="277" width="12" height="5" fill="#fbbf24" rx="2"/>
+  </g>
+
+  <!-- Stars / sparkles decorations -->
+  <g opacity="0.6">
+    <path d="M540 130 L543 140 L553 143 L543 146 L540 156 L537 146 L527 143 L537 140 Z" fill="#22c55e"/>
+    <path d="M60 200 L62 207 L69 210 L62 213 L60 220 L58 213 L51 210 L58 207 Z" fill="#16a34a"/>
+    <path d="M570 240 L572 245 L577 247 L572 249 L570 254 L568 249 L563 247 L568 245 Z" fill="#86efac"/>
+    <path d="M30 300 L32 305 L37 307 L32 309 L30 314 L28 309 L23 307 L28 305 Z" fill="#86efac"/>
+  </g>
+
+  <!-- Floating checkmark badges -->
+  <g filter="url(#softShadow)">
+    <rect x="18" y="160" width="110" height="36" fill="white" rx="18" opacity="0.95"/>
+    <circle cx="40" cy="178" r="12" fill="#22c55e"/>
+    <path d="M34 178 L38 183 L47 173" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="56" y="183" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">24/7 Service</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="472" y="160" width="110" height="36" fill="white" rx="18" opacity="0.95"/>
+    <circle cx="494" cy="178" r="12" fill="#22c55e"/>
+    <path d="M488 178 L492 183 L501 173" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="510" y="183" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Certified Pro</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="236" y="420" width="128" height="36" fill="white" rx="18" opacity="0.95"/>
+    <circle cx="258" cy="438" r="12" fill="#22c55e"/>
+    <path d="M252 438 L256 443 L265 433" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="274" y="443" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">Fully Insured</text>
+  </g>
+</svg>
