@@ -4,8 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Our Solutions - Valet Parking Services | Growmore Parking Solutions',
-  description: 'Currently offering professional valet parking services for corporates, malls, events, and hospitality. Trained staff, uniformed attendants, and exceptional customer experience. More solutions coming soon!',
+  title: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane | Growmore Parking Solutions',
+  description: 'Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra for corporates, malls, events, hotels & residential complexes. Trained valet attendants available 24/7.',
+  keywords: 'valet parking services Mumbai, valet parking Navi Mumbai, valet parking Thane, corporate valet parking, event valet services, hotel valet parking, mall valet parking, residential valet parking, valet attendants Mumbai',
 }
 
 export default function Services() {

@@ -4,16 +4,19 @@ import { FiCheckCircle, FiUsers, FiTrendingUp, FiShield, FiClock, FiAward, FiArr
 import { FaWhatsapp } from 'react-icons/fa'
 import AnimatedBackground from '@/components/AnimatedBackground'
 import LocalBusinessSchema from '@/components/LocalBusinessSchema'
+import FAQSchema from '@/components/FAQSchema'
 
 export const metadata = {
-  title: 'Home | Growmore Parking Solutions - Professional Valet Parking Services',
-  description: 'Transform your parking experience with Growmore Parking Solutions. Professional valet parking services for corporates, malls, events, and hospitality with trained staff and exceptional service.',
+  title: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane, Kalyan | Growmore Parking',
+  description: 'Best valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra. Professional parking attendants for corporates, malls, events, hotels & residential complexes. 24/7 service available.',
+  keywords: 'valet parking Mumbai, valet parking Navi Mumbai, valet parking Thane, valet parking Kalyan, valet parking Bandra, parking services Mumbai, best valet parking Mumbai, 24/7 valet parking, corporate valet parking Mumbai, event valet services Mumbai, hotel valet parking Mumbai, mall valet parking Mumbai',
 }
 
 export default function Home() {
   return (
     <>
       <LocalBusinessSchema />
+      <FAQSchema />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-primary-50 overflow-hidden">
         <AnimatedBackground />
@@ -26,12 +29,12 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="heading-1">
-                Transform Your Parking with
-                <span className="text-primary-600"> Professional Valet Services</span>
+                Professional Valet Parking in
+                <span className="text-primary-600"> Mumbai, Navi Mumbai & Thane</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Professional valet parking services with trained attendants 
-                designed to optimize space, enhance customer experience, and elevate your brand.
+                Expert valet parking services across Mumbai, Navi Mumbai, Thane, Kalyan & Bandra with trained attendants. 
+                Serving corporates, malls, events, hotels & residential complexes 24/7.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link href="/contact" className="btn-primary">

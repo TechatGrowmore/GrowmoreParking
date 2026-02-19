@@ -3,7 +3,7 @@ export default function LocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Growmore Parking Solutions Pvt Limited",
-    "description": "Professional valet parking services for corporates, malls, events, and hospitality",
+    "description": "Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan and Bandra for corporates, malls, events, hotels and residential complexes",
     "url": "https://www.growmoreparking.com",
     "telephone": "+91-93218-55377",
     "email": "sales@growmoreparking.com",
@@ -22,16 +22,90 @@ export default function LocalBusinessSchema() {
     },
     "openingHours": "Mo-Su 00:00-23:59",
     "priceRange": "$$",
-    "areaServed": {
-      "@type": "Country",
-      "name": "India"
-    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mumbai",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Maharashtra"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Navi Mumbai",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Maharashtra"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Thane",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Maharashtra"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Kalyan",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Maharashtra"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Bandra",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Maharashtra"
+        }
+      }
+    ],
     "serviceType": [
-      "Valet Parking",
+      "Valet Parking Mumbai",
+      "Valet Parking Navi Mumbai",
+      "Valet Parking Thane",
+      "Valet Parking Kalyan",
       "Parking Management",
       "Event Parking Services",
-      "Corporate Parking Solutions"
-    ]
+      "Corporate Parking Solutions",
+      "Hotel Valet Parking",
+      "Mall Valet Parking",
+      "Residential Valet Parking"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Valet Parking Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Valet Parking Services Mumbai",
+            "description": "Professional valet parking services in Mumbai with trained attendants"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Corporate Valet Parking",
+            "description": "Dedicated valet parking solutions for corporate offices and business centers"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Event Valet Parking",
+            "description": "Professional valet parking management for events, weddings, and functions"
+          }
+        }
+      ]
+    }
   }
 
   return (

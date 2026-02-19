@@ -27,8 +27,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm leading-relaxed">
-              Leading provider of professional valet parking and smart parking management solutions, 
-              transforming parking experiences across India.
+              Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra. 
+              Expert parking management solutions for corporates, malls, events, hotels & residential complexes.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-primary-400 transition" aria-label="Facebook">
