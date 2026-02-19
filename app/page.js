@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { FiCheckCircle, FiUsers, FiTrendingUp, FiShield, FiClock, FiAward, FiArrowRight, FiStar } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 import AnimatedBackground from '@/components/AnimatedBackground'
+import LocalBusinessSchema from '@/components/LocalBusinessSchema'
 
 export const metadata = {
   title: 'Home | Growmore Parking Solutions - Professional Valet Parking Services',
@@ -12,6 +13,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <LocalBusinessSchema />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-50 via-white to-primary-50 overflow-hidden">
         <AnimatedBackground />

@@ -76,8 +76,9 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <FiMapPin size={20} className="text-primary-400 mt-1 flex-shrink-0" />
                 <span className="text-sm">
-                  123 Business District, <br />
-                  New Delhi, India - 110001
+                  Gopal Mansion CHS., Office No. 67-B,<br />
+                  Ground Floor, Gurunanak Road,<br />
+                  Bandra (W), Mumbai - 400 050
                 </span>
               </li>
               <li className="flex items-center gap-3">

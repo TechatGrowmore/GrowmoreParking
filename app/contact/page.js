@@ -261,8 +261,9 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">Address</h3>
                       <p className="text-gray-600">
-                        123 Business District,<br />
-                        New Delhi, India - 110001
+                        Gopal Mansion CHS., Office No. 67-B,<br />
+                        Ground Floor, Gurunanak Road,<br />
+                        Bandra (W), Mumbai - 400 050
                       </p>
                     </div>
                   </div>
