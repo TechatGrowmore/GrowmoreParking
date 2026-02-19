@@ -7,7 +7,7 @@ import LocalBusinessSchema from '@/components/LocalBusinessSchema'
 import FAQSchema from '@/components/FAQSchema'
 
 export const metadata = {
-  title: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane, Kalyan | Growmore Parking',
+  title: 'Professional Valet Parking Services | Growmore Parking',
   description: 'Best valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra. Professional parking attendants for corporates, malls, events, hotels & residential complexes. 24/7 service available.',
   keywords: 'valet parking Mumbai, valet parking Navi Mumbai, valet parking Thane, valet parking Kalyan, valet parking Bandra, parking services Mumbai, best valet parking Mumbai, 24/7 valet parking, corporate valet parking Mumbai, event valet services Mumbai, hotel valet parking Mumbai, mall valet parking Mumbai',
 }
@@ -29,11 +29,11 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="heading-1">
-                Professional Valet Parking in
-                <span className="text-primary-600"> Mumbai, Navi Mumbai & Thane</span>
+                Professional
+                <span className="text-primary-600"> Valet Parking Services</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Expert valet parking services across Mumbai, Navi Mumbai, Thane, Kalyan & Bandra with trained attendants. 
+                Expert valet parking services with trained attendants.
                 Serving corporates, malls, events, hotels & residential complexes 24/7.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
