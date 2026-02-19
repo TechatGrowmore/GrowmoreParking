@@ -22,9 +22,9 @@ export const metadata = {
   creator: 'Growmore Parking Solutions Pvt Limited',
   publisher: 'Growmore Parking Solutions Pvt Limited',
   icons: {
-    icon: '/logo/logo2.jpeg',
-    shortcut: '/logo/logo2.jpeg',
-    apple: '/logo/logo2.jpeg',
+    icon: '/logo/logo2.webp',
+    shortcut: '/logo/logo2.webp',
+    apple: '/logo/logo2.webp',
   },
   openGraph: {
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata = {
     siteName: 'Growmore Parking Solutions',
     images: [
       {
-        url: '/logo/logo.png',
+        url: '/logo/logo.webp',
         width: 1200,
         height: 630,
         alt: 'Growmore Parking Solutions',
@@ -46,7 +46,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Growmore Parking Solutions Pvt Limited',
     description: 'Professional valet parking services with trained attendants',
-    images: ['/logo/logo.png'],
+    images: ['/logo/logo.webp'],
   },
   robots: {
     index: true,

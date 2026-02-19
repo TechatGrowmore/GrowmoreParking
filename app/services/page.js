@@ -107,7 +107,7 @@ export default function Services() {
                     {/* Featured Attendant Image */}
                     <div className="relative h-[300px] rounded-xl overflow-hidden shadow-lg mb-4">
                       <Image 
-                        src="/Valet/5.png" 
+                        src="/Valet/5.webp" 
                         alt="Professional valet attendants in uniform" 
                         fill
                         className="object-cover hover:scale-105 transition-transform duration-300"
@@ -123,7 +123,7 @@ export default function Services() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                         <Image 
-                          src="/Valet/1.jpeg" 
+                          src="/Valet/1.webp" 
                           alt="Valet parking slot signage" 
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-300"
@@ -131,7 +131,7 @@ export default function Services() {
                       </div>
                       <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                         <Image 
-                          src="/Valet/image1.png" 
+                          src="/Valet/image1.webp" 
                           alt="Two-wheeler parking management" 
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-300"
@@ -139,7 +139,7 @@ export default function Services() {
                       </div>
                       <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                         <Image 
-                          src="/Valet/3.jpeg" 
+                          src="/Valet/3.webp" 
                           alt="Organized bike parking slots" 
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-300"
@@ -147,7 +147,7 @@ export default function Services() {
                       </div>
                       <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                         <Image 
-                          src="/Valet/4.jpeg" 
+                          src="/Valet/4.webp" 
                           alt="Car parking valet service" 
                           fill
                           className="object-cover hover:scale-105 transition-transform duration-300"

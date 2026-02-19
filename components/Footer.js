@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image 
-                src="/logo/logo2.jpeg" 
+                src="/logo/logo2.webp" 
                 alt="Growmore Parking Solutions" 
                 width={60} 
                 height={60}

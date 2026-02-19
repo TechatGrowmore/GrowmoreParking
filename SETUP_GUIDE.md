@@ -83,7 +83,7 @@ npm run lint         # Run ESLint
 ## 🔧 Customization
 
 ### Update Logo
-- Replace `/logo/logo.png` with your actual logo
+- Replace `/logo/logo.webp` with your actual logo
 - The logo is automatically used in the header and throughout the site
 
 ### Update Contact Information
@@ -130,7 +130,7 @@ vercel
 
 ## 🎯 Next Steps
 
-1. **Replace logo**: Update `/logo/logo.png` with your actual company logo
+1. **Replace logo**: Update `/logo/logo.webp` with your actual company logo
 2. **Update contact info**: Change phone numbers and email addresses
 3. **Add real images**: Replace placeholder content with actual photos
 4. **Customize content**: Edit service descriptions to match your offerings

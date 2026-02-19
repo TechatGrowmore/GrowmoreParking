@@ -59,7 +59,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-primary-600 rounded-3xl transform -rotate-3 opacity-10"></div>
               <div className="relative h-full bg-white rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center p-6">
                 <Image 
-                  src="/Valet/image.png" 
+                  src="/Valet/image.webp" 
                   alt="Smart Parking Lot with Valet Services" 
                   width={520}
                   height={520}
@@ -210,7 +210,7 @@ export default function Home() {
           <div className="mb-8">
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
               <Image 
-                src="/Valet/5.png" 
+                src="/Valet/5.webp" 
                 alt="Professional valet parking attendants in uniform providing excellent customer service" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -229,7 +229,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
               <Image 
-                src="/Valet/1.jpeg" 
+                src="/Valet/1.webp" 
                 alt="Valet parking sign with organized parking slot numbering system" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -243,7 +243,7 @@ export default function Home() {
             
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
               <Image 
-                src="/Valet/image1.png" 
+                src="/Valet/image1.webp" 
                 alt="Organized two-wheeler parking slots with clear markings" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -259,7 +259,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
               <Image 
-                src="/Valet/3.jpeg" 
+                src="/Valet/3.webp" 
                 alt="Well-marked bike parking slots in organized rows" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -273,7 +273,7 @@ export default function Home() {
             
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
               <Image 
-                src="/Valet/4.jpeg" 
+                src="/Valet/4.webp" 
                 alt="Overview of professional valet parking facility with organized car parking" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
