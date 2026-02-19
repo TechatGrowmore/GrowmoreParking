@@ -212,6 +212,105 @@ export default function ValetParkingMumbai() {
         </div>
       </section>
 
+      {/* Office Location Map */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Visit Our Mumbai Office
+            </h2>
+            <p className="text-xl text-gray-600">
+              Located in Bandra West - Easily accessible from all Mumbai areas
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Map */}
+            <div className="rounded-xl overflow-hidden shadow-lg h-[400px]">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.670725085615!2d72.83504536214903!3d19.058415771760004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c917d9966f6d%3A0x376ea0726785ccff!2sGopal%20Mansion%20B%2C%20Gurunanak%20Rd%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1771508997738!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Growmore Parking Solutions Office - Bandra West, Mumbai"
+                className="w-full h-full"
+              ></iframe>
+            </div>
+
+            {/* Office Details */}
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-primary-100 p-3 rounded-lg">
+                    <FiMapPin className="text-primary-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Head Office Address</h3>
+                    <p className="text-gray-600">
+                      Gopal Mansion CHS., Office No. 67-B<br />
+                      Ground Floor, Gurunanak Road<br />
+                      Bandra West, Mumbai - 400 050<br />
+                      Maharashtra, India
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-primary-100 p-3 rounded-lg">
+                    <FiPhone className="text-primary-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Contact Numbers</h3>
+                    <p className="text-gray-600">
+                      Primary: <a href="tel:+919321855377" className="text-primary-600 font-semibold hover:underline">+91 93218 55377</a><br />
+                      Secondary: <a href="tel:+919321554553" className="text-primary-600 font-semibold hover:underline">+91 93215 54553</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-md">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-primary-100 p-3 rounded-lg">
+                    <FiMail className="text-primary-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">Email Addresses</h3>
+                    <p className="text-gray-600">
+                      Sales: <a href="mailto:sales@growmoreparking.com" className="text-primary-600 font-semibold hover:underline">sales@growmoreparking.com</a><br />
+                      Support: <a href="mailto:ravin@growmoreparking.com" className="text-primary-600 font-semibold hover:underline">ravin@growmoreparking.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-primary-600 to-primary-700 p-6 rounded-xl shadow-md text-white">
+                <h3 className="font-bold text-lg mb-3">How to Reach Us</h3>
+                <ul className="space-y-2 text-primary-50">
+                  <li className="flex items-start gap-2">
+                    <FiCheckCircle className="mt-1 flex-shrink-0" size={16} />
+                    <span>5 min walk from Bandra Railway Station (Western Line)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <FiCheckCircle className="mt-1 flex-shrink-0" size={16} />
+                    <span>Easy access from Western Express Highway</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <FiCheckCircle className="mt-1 flex-shrink-0" size={16} />
+                    <span>Parking available near the office</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-primary-600 text-white">
         <div className="container-custom">

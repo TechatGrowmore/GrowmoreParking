@@ -374,13 +374,19 @@ export default function Contact() {
                 </a>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="card bg-gray-100 h-64 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <FiMapPin size={48} className="mx-auto mb-2" />
-                  <p>Map Location</p>
-                  <p className="text-sm">Google Maps Integration</p>
-                </div>
+              {/* Google Maps Location */}
+              <div className="card p-0 overflow-hidden h-[400px]">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.670725085615!2d72.83504536214903!3d19.058415771760004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c917d9966f6d%3A0x376ea0726785ccff!2sGopal%20Mansion%20B%2C%20Gurunanak%20Rd%2C%20Bandra%20West%2C%20Mumbai%2C%20Maharashtra%20400050!5e0!3m2!1sen!2sin!4v1771508997738!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen="" 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Growmore Parking Solutions Office Location - Bandra West, Mumbai"
+                  className="w-full h-full"
+                ></iframe>
               </div>
             </div>
           </div>
