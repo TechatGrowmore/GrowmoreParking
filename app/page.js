@@ -7,9 +7,12 @@ import LocalBusinessSchema from '@/components/LocalBusinessSchema'
 import FAQSchema from '@/components/FAQSchema'
 
 export const metadata = {
-  title: 'Professional Valet Parking Services | Growmore Parking',
+  title: 'Valet Parking Services Mumbai, Navi Mumbai, Thane | Growmore Parking',
   description: 'Best valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra. Professional parking attendants for corporates, malls, events, hotels & residential complexes. 24/7 service available.',
   keywords: 'valet parking Mumbai, valet parking Navi Mumbai, valet parking Thane, valet parking Kalyan, valet parking Bandra, parking services Mumbai, best valet parking Mumbai, 24/7 valet parking, corporate valet parking Mumbai, event valet services Mumbai, hotel valet parking Mumbai, mall valet parking Mumbai',
+  alternates: {
+    canonical: 'https://www.growmoreparking.com',
+  },
 }
 
 export default function Home() {
@@ -222,7 +225,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <div className="inline-block bg-green-500 px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                <div className="inline-block bg-green-500 px-3 py-1 rouwnded-full text-sm font-semibold mb-3">
                   Our Professional Team
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold mb-3">Professional Valet Attendants</h3>
@@ -234,20 +237,6 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
               <Image 
-                src="/Valet/1.webp" 
-                alt="Valet parking sign with organized parking slot numbering system" 
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Smart Parking Organization</h3>
-                <p className="text-sm text-gray-200">Clear signage and systematic slot allocation for efficient vehicle management</p>
-              </div>
-            </div>
-            
-            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
-              <Image 
                 src="/Valet/image1.webp" 
                 alt="Organized two-wheeler parking slots with clear markings" 
                 fill
@@ -255,10 +244,26 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Two-Wheeler Parking</h3>
-                <p className="text-sm text-gray-200">Dedicated motorcycle parking with numbered allocations</p>
+                <h3 className="text-xl font-bold mb-2">Pay and Park Management Services</h3>
+                <p className="text-sm text-gray-200">Efficient and secure management and payment processing for valet parking services</p>
               </div>
             </div>
+            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
+              <Image 
+                src="/Valet/4.webp" 
+                alt="Overview of professional valet parking facility with organized car parking" 
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-xl font-bold mb-2">Parking Lot Marking Services</h3>
+                <p className="text-sm text-gray-200">Professional line marking and slot numbering for organized parking management</p>
+              </div>
+            </div>
+            
+            
+            
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -271,24 +276,23 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Systematic Layout</h3>
-                <p className="text-sm text-gray-200">Professional line marking and slot numbering for easy navigation</p>
+                <h3 className="text-xl font-bold mb-2">Professional Stack Parking Operator / Valet Driver</h3>
+                <p className="text-sm text-gray-200">Professional, trained valet drivers ensuring safe and efficient vehicle handling</p>
               </div>
             </div>
-            
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl group">
               <Image 
-                src="/Valet/4.webp" 
-                alt="Overview of professional valet parking facility with organized car parking" 
+                src="/Valet/1.webp" 
+                alt="Valet parking sign with organized parking slot numbering system" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h3 className="text-xl font-bold mb-2">Premium Car Parking</h3>
-                <p className="text-sm text-gray-200">Secure and spacious parking bays for all vehicle types</p>
+                <h3 className="text-xl font-bold mb-2">Smart Parking Organization</h3>
+                <p className="text-sm text-gray-200">Clear signage and systematic slot allocation for efficient vehicle management</p>
               </div>
-            </div>
+            </div> 
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mt-12 bg-primary-50 rounded-2xl p-8">
@@ -379,9 +383,9 @@ export default function Home() {
                 rating: 5
               },
               {
-                name: 'Priya Sharma',
-                position: 'Mall Operations Head',
-                content: 'Outstanding service! Their valet team is professional and the technology integration is seamless. Customer satisfaction has increased by 40%.',
+                name: 'Sneha Desai',
+                position: 'Event Organiser, Corporate Events',
+                content: 'We hired Growmore Parking for our corporate event and they were absolutely outstanding. The valet team was professional, well-uniformed, and handled 100+ cars without a single issue. Our guests and delegates were thoroughly impressed!',
                 rating: 5
               },
               {

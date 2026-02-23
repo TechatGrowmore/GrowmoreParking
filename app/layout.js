@@ -60,12 +60,8 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code', // Add your Google Search Console verification code
-  },
-  alternates: {
-    canonical: 'https://www.growmoreparking.com',
-  },
+  // NOTE: Do NOT set a global canonical here — each page sets its own via alternates.canonical
+  // GSC verified via GoDaddy DNS — no verification meta tag needed
 }
 
 export const viewport = {

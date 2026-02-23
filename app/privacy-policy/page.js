@@ -3,6 +3,10 @@ import { FiPhone, FiMail } from 'react-icons/fi'
 export const metadata = {
   title: 'Privacy Policy | Growmore Parking Solutions',
   description: 'Privacy policy for Growmore Parking Solutions Pvt Limited',
+  alternates: {
+    canonical: 'https://www.growmoreparking.com/privacy-policy',
+  },
+  robots: { index: false, follow: false },
 }
 
 export default function PrivacyPolicy() {

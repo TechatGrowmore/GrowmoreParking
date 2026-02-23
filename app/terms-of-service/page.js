@@ -1,6 +1,10 @@
 export const metadata = {
   title: 'Terms of Service | Growmore Parking Solutions',
   description: 'Terms of service for Growmore Parking Solutions Pvt Limited',
+  alternates: {
+    canonical: 'https://www.growmoreparking.com/terms-of-service',
+  },
+  robots: { index: false, follow: false },
 }
 
 export default function TermsOfService() {

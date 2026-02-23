@@ -27,7 +27,8 @@ export default function Contact() {
     setSubmitStatus(null)
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      // ── 1. Send email via Web3Forms (client-side, avoids Cloudflare block) ──
+      const emailResponse = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
@@ -40,20 +41,28 @@ export default function Contact() {
           email: formData.email,
           phone: formData.phone,
           company: formData.company || 'N/A',
-          city: formData.city || 'N/A',
+          city: formData.city,
           solution_interested: formData.service,
           message: formData.message,
+          source: 'Website Contact Form',
         }),
       })
 
-      const result = await response.json()
-
-      if (result.success) {
-        setSubmitStatus('success')
-        setFormData({ name: '', email: '', phone: '', company: '', city: '', service: '', message: '' })
-      } else {
+      const emailResult = await emailResponse.json()
+      if (!emailResult.success) {
         setSubmitStatus('error')
+        return
       }
+
+      // ── 2. Log to Google Sheets via server API route ───────────────────────
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      }).catch(() => {}) // fire-and-forget, don't block UX
+
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', phone: '', company: '', city: '', service: '', message: '' })
     } catch (err) {
       setSubmitStatus('error')
     } finally {
@@ -181,6 +190,8 @@ export default function Contact() {
                   >
                     <option value="">Select a solution</option>
                     <option value="valet">Valet Parking Solutions</option>
+                    <option value="event-valet">Event Valet Parking</option>
+                    <option value="stack">Stack Parking</option>
                     <option value="corporate">Corporate Parking Solutions</option>
                     <option value="automated">Automated Parking Systems</option>
                     <option value="management">Parking Management Solutions</option>

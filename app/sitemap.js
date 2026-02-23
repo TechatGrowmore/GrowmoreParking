@@ -7,8 +7,6 @@ export default function sitemap() {
     '/services',
     '/contact',
     '/valet-parking-mumbai',
-    '/privacy-policy',
-    '/terms-of-service',
   ]
 
   return routes.map((route) => ({

@@ -6,6 +6,9 @@ export const metadata = {
   title: 'Valet Parking Services in Mumbai & Bandra | Professional Valet Attendants',
   description: 'Best valet parking services in Mumbai & Bandra West. Professional valet attendants for corporates, hotels, malls, events & residential complexes. Available 24/7. Call +91 93218 55377',
   keywords: 'valet parking Mumbai, valet parking Bandra, valet parking Bandra West, valet parking services Mumbai, best valet parking Mumbai, professional valet parking Mumbai, 24/7 valet parking Mumbai, corporate valet parking Mumbai, event valet parking Mumbai, hotel valet parking Mumbai',
+  alternates: {
+    canonical: 'https://www.growmoreparking.com/valet-parking-mumbai',
+  },
 }
 
 export default function ValetParkingMumbai() {

@@ -5,6 +5,9 @@ export const metadata = {
   title: 'About Us - Valet Parking Company in Mumbai | Growmore Parking Solutions',
   description: 'Leading valet parking company in Mumbai, Navi Mumbai, Thane & Kalyan. Professional parking management services for corporates, malls, events & hotels across Maharashtra.',
   keywords: 'valet parking company Mumbai, parking management company, valet services provider Mumbai, professional parking solutions Mumbai',
+  alternates: {
+    canonical: 'https://www.growmoreparking.com/about',
+  },
 }
 
 export default function About() {

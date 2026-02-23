@@ -7,6 +7,9 @@ export const metadata = {
   title: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane | Growmore Parking Solutions',
   description: 'Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra for corporates, malls, events, hotels & residential complexes. Trained valet attendants available 24/7.',
   keywords: 'valet parking services Mumbai, valet parking Navi Mumbai, valet parking Thane, corporate valet parking, event valet services, hotel valet parking, mall valet parking, residential valet parking, valet attendants Mumbai',
+  alternates: {
+    canonical: 'https://www.growmoreparking.com/services',
+  },
 }
 
 export default function Services() {
