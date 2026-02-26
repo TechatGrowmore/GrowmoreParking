@@ -33,7 +33,11 @@ export default function OrganizationSchema() {
     ],
     "email": "sales@growmoreparking.com",
     "sameAs": [
-      "https://www.growmoreparking.com"
+      "https://www.growmoreparking.com",
+      "https://www.facebook.com/profile.php?id=61561549145462",
+      "https://www.instagram.com/growwmoreparking/",
+      "https://x.com/GrowwmoreP38654",
+      "https://www.linkedin.com/in/growmoreparking-undefined-80384539b"
     ],
     "geo": {
       "@type": "GeoCoordinates",

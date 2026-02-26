@@ -31,16 +31,16 @@ const Footer = () => {
               Expert parking management solutions for corporates, malls, events, hotels & residential complexes.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-primary-400 transition" aria-label="Facebook">
+              <a href="https://www.facebook.com/profile.php?id=61561549145462" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition" aria-label="Facebook">
                 <FiFacebook size={20} />
               </a>
-              <a href="#" className="hover:text-primary-400 transition" aria-label="Twitter">
+              <a href="https://x.com/GrowwmoreP38654" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition" aria-label="Twitter / X">
                 <FiTwitter size={20} />
               </a>
-              <a href="#" className="hover:text-primary-400 transition" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/growmoreparking-undefined-80384539b" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition" aria-label="LinkedIn">
                 <FiLinkedin size={20} />
               </a>
-              <a href="#" className="hover:text-primary-400 transition" aria-label="Instagram">
+              <a href="https://www.instagram.com/growwmoreparking/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition" aria-label="Instagram">
                 <FiInstagram size={20} />
               </a>
             </div>
