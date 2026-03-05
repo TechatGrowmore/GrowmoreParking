@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
 import OrganizationSchema from '@/components/OrganizationSchema'
+import WebSiteSchema from '@/components/WebSiteSchema'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -74,6 +75,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <OrganizationSchema />
+        <WebSiteSchema />
         <Header />
         <main className="min-h-screen">
           {children}

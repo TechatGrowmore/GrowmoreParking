@@ -412,6 +412,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Internal Links / Explore Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 mb-4">Explore Growmore Parking</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Learn more about our professional valet parking services, our story, and how to get in touch.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: 'Our Services',
+                desc: 'Explore our full range of valet parking solutions for corporates, events, malls, hotels and residential complexes.',
+                href: '/services',
+                label: 'View Services'
+              },
+              {
+                title: 'Valet Parking in Mumbai',
+                desc: 'Dedicated valet parking services across Mumbai and Bandra West. Trained attendants available 24/7.',
+                href: '/valet-parking-mumbai',
+                label: 'Mumbai Services'
+              },
+              {
+                title: 'About Us',
+                desc: 'Learn about Growmore Parking Solutions — our mission, values and the team behind our professional parking management.',
+                href: '/about',
+                label: 'Our Story'
+              },
+              {
+                title: 'Contact Us',
+                desc: 'Get a free quote for valet parking at your facility. We respond within 24 hours.',
+                href: '/contact',
+                label: 'Get a Quote'
+              },
+            ].map((item, i) => (
+              <Link key={i} href={item.href} className="group card bg-white hover:shadow-xl transition-all duration-300 flex flex-col">
+                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed flex-1">{item.desc}</p>
+                <span className="mt-4 text-primary-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  {item.label} <FiArrowRight size={14} />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-primary-600 to-primary-700 text-white">
         <div className="container-custom">

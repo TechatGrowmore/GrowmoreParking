@@ -1,18 +1,18 @@
 export default function sitemap() {
   const baseUrl = process.env.SITE_URL || 'https://www.growmoreparking.com'
-  
+
   const routes = [
-    '',
-    '/about',
-    '/services',
-    '/contact',
-    '/valet-parking-mumbai',
+    { path: '',                      freq: 'weekly',  priority: 1.0,  modified: '2026-03-01' },
+    { path: '/services',             freq: 'weekly',  priority: 0.9,  modified: '2026-03-01' },
+    { path: '/valet-parking-mumbai', freq: 'weekly',  priority: 0.95, modified: '2026-03-01' },
+    { path: '/about',                freq: 'monthly', priority: 0.8,  modified: '2026-03-01' },
+    { path: '/contact',              freq: 'monthly', priority: 0.8,  modified: '2026-03-01' },
   ]
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === '' ? 'daily' : route === '/services' || route === '/valet-parking-mumbai' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1.0 : route === '/valet-parking-mumbai' ? 0.95 : route === '/services' ? 0.9 : 0.8,
+  return routes.map(({ path, freq, priority, modified }) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: modified,
+    changeFrequency: freq,
+    priority,
   }))
 }
