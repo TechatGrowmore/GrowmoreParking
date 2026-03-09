@@ -10,7 +10,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: SITE_URL
-        value: https://www.growmoreparking.com
+        value: https://growmoreparking.com
     domains:
       - growmoreparking.com
       - www.growmoreparking.com

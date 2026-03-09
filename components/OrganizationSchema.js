@@ -4,8 +4,8 @@ export default function OrganizationSchema() {
     "@type": "Organization",
     "name": "Growmore Parking Solutions Pvt Limited",
     "alternateName": "Growmore Parking",
-    "url": "https://www.growmoreparking.com",
-    "logo": "https://www.growmoreparking.com/logo/logo.webp",
+    "url": "https://growmoreparking.com",
+    "logo": "https://growmoreparking.com/logo/logo.webp",
     "description": "Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan and Bandra for corporates, malls, events, hotels and residential complexes",
     "address": {
       "@type": "PostalAddress",
@@ -33,7 +33,7 @@ export default function OrganizationSchema() {
     ],
     "email": "sales@growmoreparking.com",
     "sameAs": [
-      "https://www.growmoreparking.com",
+      "https://growmoreparking.com",
       "https://www.facebook.com/profile.php?id=61561549145462",
       "https://www.instagram.com/growwmoreparking/",
       "https://x.com/GrowwmoreP38654",

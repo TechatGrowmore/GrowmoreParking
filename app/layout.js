@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL(process.env.SITE_URL || 'https://www.growmoreparking.com'),
+  metadataBase: new URL(process.env.SITE_URL || 'https://growmoreparking.com'),
   title: {
     default: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane | Growmore Parking Solutions',
     template: '%s | Growmore Parking Solutions'
@@ -31,7 +31,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://www.growmoreparking.com',
+    url: 'https://growmoreparking.com',
     title: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane | Growmore Parking',
     description: 'Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra. Expert parking attendants for corporates, malls, events, hotels. Available 24/7.',
     siteName: 'Growmore Parking Solutions',

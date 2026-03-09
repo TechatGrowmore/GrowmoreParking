@@ -5,17 +5,17 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 export const metadata = {
   title: 'Valet Parking Services in Mumbai & Bandra | Professional Valet Attendants',
   description: 'Best valet parking services in Mumbai & Bandra West. Professional valet attendants for corporates, hotels, malls, events & residential complexes. Available 24/7. Call +91 93218 55377',
-  keywords: 'valet parking Mumbai, valet parking Bandra, valet parking Bandra West, valet parking services Mumbai, best valet parking Mumbai, professional valet parking Mumbai, 24/7 valet parking Mumbai, corporate valet parking Mumbai, event valet parking Mumbai, hotel valet parking Mumbai',
+  keywords: 'valet parking Mumbai, valet parking Bandra, valet parking Bandra West, valet parking BKC, valet parking Lower Parel, valet parking Andheri, valet parking Juhu, valet parking Goregaon, valet parking Malad, valet parking Borivali, valet parking Kandivali, valet parking Dahisar, valet parking Powai, valet parking Vikhroli, valet parking Mulund, valet parking Ghatkopar, valet parking Chembur, valet parking Dadar, valet parking Santacruz, valet parking Khar, valet parking Jogeshwari, valet parking Kurla, valet parking Worli, valet parking Belapur, valet parking Vashi, valet parking Kharghar, valet parking Nerul, valet parking Panvel, valet parking Airoli, valet parking Navi Mumbai, valet parking Thane, valet parking Kalyan, valet parking Dombivli, valet parking Vasai, valet parking Mira Road, valet parking services Mumbai, best valet parking Mumbai, best valet parking company Mumbai, professional valet parking Mumbai, premium valet parking Mumbai, 24/7 valet parking Mumbai, corporate valet parking Mumbai, IT park parking Mumbai, hospital valet parking Mumbai, event valet parking Mumbai, wedding valet parking Mumbai, sangeet valet parking Mumbai, banquet valet parking Mumbai, hotel valet parking Mumbai, 5-star hotel valet Mumbai, restaurant valet parking Mumbai, mall valet parking Mumbai, residential society valet Mumbai, society parking management Mumbai, stack parking Mumbai, car parking management Greater Mumbai, valet parking operator Mumbai, parking management contractor Mumbai, managed parking services Mumbai',
   alternates: {
-    canonical: 'https://www.growmoreparking.com/valet-parking-mumbai',
+    canonical: 'https://growmoreparking.com/valet-parking-mumbai',
   },
 }
 
 export default function ValetParkingMumbai() {
   const breadcrumbItems = [
-    { name: 'Home', url: 'https://www.growmoreparking.com' },
-    { name: 'Services', url: 'https://www.growmoreparking.com/services' },
-    { name: 'Valet Parking Mumbai', url: 'https://www.growmoreparking.com/valet-parking-mumbai' }
+    { name: 'Home', url: 'https://growmoreparking.com' },
+    { name: 'Services', url: 'https://growmoreparking.com/services' },
+    { name: 'Valet Parking Mumbai', url: 'https://growmoreparking.com/valet-parking-mumbai' }
   ]
 
   const mumbaAreas = [

@@ -4,11 +4,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Valet Parking Services in Mumbai, Navi Mumbai, Thane | Growmore Parking Solutions',
-  description: 'Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra for corporates, malls, events, hotels & residential complexes. Trained valet attendants available 24/7.',
-  keywords: 'valet parking services Mumbai, valet parking Navi Mumbai, valet parking Thane, corporate valet parking, event valet services, hotel valet parking, mall valet parking, residential valet parking, valet attendants Mumbai',
+  title: 'Valet Parking Services in Mumbai, Pune, Navi Mumbai & Thane | Growmore Parking Solutions',
+  description: 'Professional valet parking services in Mumbai, Pune, Navi Mumbai, Thane & Bandra for corporates, malls, events, hotels & residential complexes. Stack parking & event valet specialists. Trained attendants available 24/7.',
+  keywords: 'valet parking services Mumbai, valet parking services Pune, valet parking Navi Mumbai, valet parking Thane, corporate valet parking Mumbai, corporate valet parking Pune, event valet parking Mumbai, event valet parking Pune, wedding valet parking Mumbai, sangeet valet parking, reception valet parking, conference parking, gala dinner parking, hotel valet parking, 5-star hotel valet parking, restaurant valet parking, banquet hall parking, mall valet parking, hospital valet parking Mumbai, IT park parking management, residential valet parking, society parking management, gated community parking, stack parking Mumbai, stack parking system India, mechanical parking system India, automated multi-level parking, puzzle parking system, tower parking system, car stackers India, parking management company Mumbai, parking management services India, managed parking solutions, car parking management Mumbai, facility management parking, parking outsourcing company, valet parking contractor, car park operators India, valet attendants Mumbai, uniformed parking staff, trained valet drivers, 24/7 valet parking, professional parking attendants India, luxury valet parking, VIP valet parking, visitor parking management, employee parking management, cashless valet parking, digital parking management, valet token system',
   alternates: {
-    canonical: 'https://www.growmoreparking.com/services',
+    canonical: 'https://growmoreparking.com/services',
   },
 }
 

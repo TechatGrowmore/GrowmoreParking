@@ -1,5 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Redirect www → non-www (canonical domain is growmoreparking.com)
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.growmoreparking.com' }],
+        destination: 'https://growmoreparking.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
   // Image optimization - disabled for better Render performance
   images: {
     unoptimized: true,

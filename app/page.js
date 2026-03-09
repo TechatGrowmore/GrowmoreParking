@@ -8,10 +8,10 @@ import FAQSchema from '@/components/FAQSchema'
 
 export const metadata = {
   title: 'Valet Parking Services Mumbai, Navi Mumbai, Thane | Growmore Parking',
-  description: 'Best valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan & Bandra. Professional parking attendants for corporates, malls, events, hotels & residential complexes. 24/7 service available.',
-  keywords: 'valet parking Mumbai, valet parking Navi Mumbai, valet parking Thane, valet parking Kalyan, valet parking Bandra, parking services Mumbai, best valet parking Mumbai, 24/7 valet parking, corporate valet parking Mumbai, event valet services Mumbai, hotel valet parking Mumbai, mall valet parking Mumbai',
+  description: 'Best valet parking services in Mumbai, Navi Mumbai, Thane, Pune & Bandra. Professional parking attendants for corporates, malls, events, hotels & residential complexes. Stack parking & event valet specialists. 24/7 service available.',
+  keywords: 'valet parking Mumbai, valet parking Navi Mumbai, valet parking Thane, valet parking Kalyan, valet parking Bandra, valet parking Pune, valet parking Hinjewadi, valet parking Koregaon Park, valet parking BKC, valet parking Lower Parel, valet parking Juhu, valet parking Andheri, valet parking Goregaon, valet parking near me, parking services Mumbai, parking management company Mumbai, parking management company India, best valet parking Mumbai, best valet parking company Maharashtra, 24/7 valet parking, professional valet parking services India, corporate valet parking Mumbai, event valet parking Mumbai, wedding valet parking, sangeet valet parking, reception valet parking, stack parking Mumbai, stack parking system India, mechanical parking system, automated parking system, car stackers Mumbai, professional valet attendants, uniformed valet attendants, hotel valet parking Mumbai, 5-star hotel valet parking, mall valet parking Mumbai, residential valet parking, society parking management, managed parking services, parking outsourcing services, luxury valet parking, VIP valet parking, valet parking contractor Mumbai, parking management Maharashtra',
   alternates: {
-    canonical: 'https://www.growmoreparking.com',
+    canonical: 'https://growmoreparking.com',
   },
 }
 
@@ -421,7 +421,7 @@ export default function Home() {
               Learn more about our professional valet parking services, our story, and how to get in touch.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: 'Our Services',
@@ -434,6 +434,12 @@ export default function Home() {
                 desc: 'Dedicated valet parking services across Mumbai and Bandra West. Trained attendants available 24/7.',
                 href: '/valet-parking-mumbai',
                 label: 'Mumbai Services'
+              },
+              {
+                title: 'Valet Parking in Pune',
+                desc: 'Professional valet parking across Pune — Hinjewadi, Baner, Koregaon Park, Viman Nagar & more. Corporate, event & residential.',
+                href: '/valet-parking-pune',
+                label: 'Pune Services'
               },
               {
                 title: 'About Us',

@@ -4,7 +4,7 @@ export default function LocalBusinessSchema() {
     "@type": "LocalBusiness",
     "name": "Growmore Parking Solutions Pvt Limited",
     "description": "Professional valet parking services in Mumbai, Navi Mumbai, Thane, Kalyan and Bandra for corporates, malls, events, hotels and residential complexes",
-    "url": "https://www.growmoreparking.com",
+    "url": "https://growmoreparking.com",
     "telephone": "+91-93218-55377",
     "email": "sales@growmoreparking.com",
     "address": {

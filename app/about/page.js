@@ -2,11 +2,11 @@ import { FiTarget, FiEye, FiAward, FiHeart } from 'react-icons/fi'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'About Us - Valet Parking Company in Mumbai | Growmore Parking Solutions',
-  description: 'Leading valet parking company in Mumbai, Navi Mumbai, Thane & Kalyan. Professional parking management services for corporates, malls, events & hotels across Maharashtra.',
-  keywords: 'valet parking company Mumbai, parking management company, valet services provider Mumbai, professional parking solutions Mumbai',
+  title: 'About Us - Valet Parking Company in Mumbai & Pune | Growmore Parking Solutions',
+  description: 'Leading valet parking company in Mumbai, Pune, Navi Mumbai & Thane. Professional parking management services for corporates, malls, events & hotels across Maharashtra.',
+  keywords: 'valet parking company Mumbai, valet parking company Pune, valet parking company Maharashtra, best parking management company India, top valet parking company Mumbai, parking management company Mumbai, parking management company Pune, parking operators India, car park operators India, valet services provider Mumbai, valet parking agency Mumbai, valet parking agency Pune, professional parking solutions Mumbai, parking solutions Pune, parking solutions Maharashtra, managed parking services provider India, facility parking management company, parking outsourcing company India, valet parking contractor India, parking management firm Mumbai, experienced valet parking professionals, trusted valet parking company, premium valet parking services India, valet parking expertise Mumbai, parking management contractors, valet staff agency Mumbai, car parking management company India',
   alternates: {
-    canonical: 'https://www.growmoreparking.com/about',
+    canonical: 'https://growmoreparking.com/about',
   },
 }
 

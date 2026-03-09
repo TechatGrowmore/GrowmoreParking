@@ -4,14 +4,14 @@ export default function WebSiteSchema() {
     "@type": "WebSite",
     "name": "Growmore Parking Solutions",
     "alternateName": "Growmore Parking",
-    "url": "https://www.growmoreparking.com",
+    "url": "https://growmoreparking.com",
     "description": "Professional valet parking services in Mumbai, Navi Mumbai, Thane & Kalyan for corporates, malls, events, hotels and residential complexes.",
     "inLanguage": "en-IN",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.growmoreparking.com/?q={search_term_string}"
+        "urlTemplate": "https://growmoreparking.com/?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -25,14 +25,16 @@ export default function WebSiteSchema() {
       "About Us",
       "Our Services",
       "Valet Parking Mumbai",
+      "Valet Parking Pune",
       "Contact Us"
     ],
     "url": [
-      "https://www.growmoreparking.com/",
-      "https://www.growmoreparking.com/about",
-      "https://www.growmoreparking.com/services",
-      "https://www.growmoreparking.com/valet-parking-mumbai",
-      "https://www.growmoreparking.com/contact"
+      "https://growmoreparking.com/",
+      "https://growmoreparking.com/about",
+      "https://growmoreparking.com/services",
+      "https://growmoreparking.com/valet-parking-mumbai",
+      "https://growmoreparking.com/valet-parking-pune",
+      "https://growmoreparking.com/contact"
     ]
   }
 
