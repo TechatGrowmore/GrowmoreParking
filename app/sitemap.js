@@ -8,6 +8,7 @@ export default function sitemap() {
     { path: '/valet-parking-pune',   freq: 'weekly',  priority: 0.95, modified: '2026-03-09' },
     { path: '/about',                freq: 'monthly', priority: 0.8,  modified: '2026-03-01' },
     { path: '/contact',              freq: 'monthly', priority: 0.8,  modified: '2026-03-01' },
+    { path: '/boom-barriers',        freq: 'weekly',  priority: 0.9,  modified: '2026-06-09' },
   ]
 
   return routes.map(({ path, freq, priority, modified }) => ({

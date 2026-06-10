@@ -5,6 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import AnimatedBackground from '@/components/AnimatedBackground'
 import LocalBusinessSchema from '@/components/LocalBusinessSchema'
 import FAQSchema from '@/components/FAQSchema'
+import ClientsSlider from '@/components/ClientsSlider'
 
 export const metadata = {
   title: 'Valet Parking Services Mumbai, Navi Mumbai, Thane | Growmore Parking',
@@ -133,15 +134,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Valet Parking Solutions */}
+      {/* Our Solutions */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Our Solutions</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Currently providing professional valet parking services across multiple sectors. More innovative solutions coming soon!
+              End-to-end parking management — from professional valet staff to automated boom barriers and real-time smart dashboards.
             </p>
           </div>
+
+          {/* Top row — 3 Valet solutions */}
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -179,26 +182,64 @@ export default function Home() {
               </div>
             ))}
           </div>
-          
-          {/* Coming Soon Section */}
-          <div className="mt-12 text-center">
-            <div className="inline-block bg-gradient-to-r from-primary-100 to-primary-50 rounded-2xl p-8 max-w-2xl">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <span className="text-2xl font-bold text-primary-700">More Solutions Coming Soon!</span>
-                <span className="text-3xl">🚀</span>
+
+          {/* Bottom row — Boom Barriers + Smart Dashboard */}
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+
+            {/* Boom Barriers */}
+            <div className="card bg-white relative overflow-hidden border-2 border-primary-100 hover:border-primary-400 transition-all duration-300 group">
+              <div className="absolute top-4 right-4">
+                <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-semibold">New</span>
               </div>
-              <p className="text-gray-600 mb-4">
-                We're expanding our services to bring you more innovative parking and facility management solutions.
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-2xl group-hover:bg-primary-600 transition-colors duration-300">🚧</div>
+                <h3 className="text-2xl font-bold text-gray-900">Boom Barriers</h3>
+              </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Automatic boom barrier systems with RFID, ANPR, FASTag & QR-code integration. Installed across residential societies, corporate campuses, malls & toll plazas.
               </p>
-              <Link href="/contact" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">
-                Get notified when we launch <FiArrowRight />
+              <div className="grid grid-cols-2 gap-2 mb-6">
+                {['RFID & ANPR Ready', 'IP54 Weatherproof', '1.5s Opening Speed', 'Safety Sensors', 'FASTag Compatible', '1-Year Warranty'].map((f, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <FiCheckCircle className="text-primary-600 flex-shrink-0" size={14} />
+                    <span className="text-sm text-gray-700">{f}</span>
+                  </div>
+                ))}
+              </div>
+              <Link href="/boom-barriers" className="btn-primary inline-flex items-center gap-2 text-sm py-2.5">
+                Explore Boom Barriers <FiArrowRight size={16} />
+              </Link>
+            </div>
+
+            {/* Smart Dashboard */}
+            <div className="card bg-white relative overflow-hidden border-2 border-primary-100 hover:border-primary-400 transition-all duration-300 group">
+              <div className="absolute top-4 right-4">
+                <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-semibold">New</span>
+              </div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-2xl group-hover:bg-primary-600 transition-colors duration-300">📊</div>
+                <h3 className="text-2xl font-bold text-gray-900">Smart Dashboard</h3>
+              </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Real-time parking management dashboard — monitor vehicle entry/exit, boom barrier status, occupancy heatmaps, and revenue analytics from a single control centre.
+              </p>
+              <div className="grid grid-cols-2 gap-2 mb-6">
+                {['Live Occupancy View', 'ANPR Camera Feeds', 'Revenue Analytics', 'Barrier Controls', 'Entry/Exit Logs', 'Instant Alerts'].map((f, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <FiCheckCircle className="text-primary-600 flex-shrink-0" size={14} />
+                    <span className="text-sm text-gray-700">{f}</span>
+                  </div>
+                ))}
+              </div>
+              <Link href="/contact" className="btn-primary inline-flex items-center gap-2 text-sm py-2.5">
+                Request a Demo <FiArrowRight size={16} />
               </Link>
             </div>
           </div>
-          
-          <div className="text-center mt-8">
+
+          <div className="text-center mt-10">
             <Link href="/services" className="btn-primary">
-              View Valet Parking Details <FiArrowRight className="inline ml-2" />
+              View All Services <FiArrowRight className="inline ml-2" />
             </Link>
           </div>
         </div>
@@ -412,6 +453,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Clients Slider */}
+      <ClientsSlider />
+
       {/* Internal Links / Explore Section */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
@@ -428,6 +472,12 @@ export default function Home() {
                 desc: 'Explore our full range of valet parking solutions for corporates, events, malls, hotels and residential complexes.',
                 href: '/services',
                 label: 'View Services'
+              },
+              {
+                title: 'Boom Barriers',
+                desc: 'Automatic boom barrier systems with RFID, ANPR & FASTag integration — installed across Mumbai & Pune.',
+                href: '/boom-barriers',
+                label: 'Explore Boom Barriers'
               },
               {
                 title: 'Valet Parking in Mumbai',

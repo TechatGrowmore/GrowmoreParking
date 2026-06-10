@@ -247,19 +247,126 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Coming Soon Section */}
-      <section className="section-padding bg-white">
+      {/* Boom Barriers Section */}
+      <section className="section-padding bg-gray-50" id="boom-barriers">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12">
-              <div className="text-6xl mb-4">🚀</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Expanding Our Solutions</h2>
-              <p className="text-lg text-gray-700 mb-6">
-                While valet parking is our current specialty, we're actively developing more innovative 
-                parking and facility management solutions to serve you better.
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            {/* Image */}
+            <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl group">
+              <Image
+                src="/boom-barrier/hero.png"
+                alt="Growmore Parking automatic boom barrier at corporate entrance"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-6 left-6">
+                <span className="bg-primary-600 text-white px-4 py-1.5 rounded-full text-sm font-semibold">
+                  🚧 Boom Barriers
+                </span>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="space-y-6">
+              <div className="inline-block bg-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-primary-200">
+                Access Control
+              </div>
+              <h2 className="heading-2">Automatic Boom Barrier Systems</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Growmore Parking supplies, installs, and maintains enterprise-grade boom barrier systems
+                across Mumbai, Pune &amp; Maharashtra — engineered for speed, security, and seamless
+                integration with RFID, ANPR, FASTag &amp; QR-code technologies.
               </p>
-              <div className="inline-block bg-white rounded-lg px-6 py-3 shadow-md">
-                <p className="text-primary-600 font-semibold">Want to be the first to know about our new services?</p>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  'RFID card, tag & mobile app access',
+                  'ANPR Automatic Number Plate Recognition',
+                  'FASTag & QR Code integration',
+                  'Built-in vehicle safety sensors',
+                  'IP54-rated weatherproof housing',
+                  '1.5s ultra-fast opening speed',
+                  'Straight, folding & telescopic arm options',
+                  '1-Year on-site warranty + AMC available',
+                ].map((b, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <FiCheckCircle className="text-primary-600 flex-shrink-0" size={18} />
+                    <span className="text-gray-700">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <Link href="/boom-barriers" className="btn-primary inline-flex items-center gap-2">
+                View Full Details →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Smart Dashboard Section */}
+      <section className="section-padding bg-white" id="smart-dashboard">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            {/* Content — left */}
+            <div className="space-y-6 lg:order-1">
+              <div className="inline-block bg-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-primary-200">
+                Real-Time Monitoring
+              </div>
+              <h2 className="heading-2">Smart Parking Dashboard</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Take full command of your parking facility with Growmore's real-time Smart Dashboard.
+                Monitor every vehicle, every barrier, and every rupee — all from one intelligent control centre.
+              </p>
+
+              {/* Dashboard KPI strip */}
+              <div className="grid grid-cols-3 gap-4 bg-gray-900 rounded-2xl p-5 text-white">
+                {[
+                  { num: 'LIVE', label: 'Occupancy Feed' },
+                  { num: '360°', label: 'Camera View' },
+                  { num: '24/7', label: 'Auto Alerts' },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center">
+                    <div className="text-2xl font-black text-primary-400">{stat.num}</div>
+                    <div className="text-xs text-gray-400 mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  'Live vehicle entry & exit tracking',
+                  'Real-time boom barrier open/close status',
+                  'Parking occupancy heatmaps by zone',
+                  'Revenue analytics & shift reports',
+                  'ANPR camera live feed integration',
+                  'Instant SMS/email alerts on anomalies',
+                  'Multi-site management from one login',
+                  'Role-based access for staff & managers',
+                ].map((b, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <FiCheckCircle className="text-primary-600 flex-shrink-0" size={18} />
+                    <span className="text-gray-700">{b}</span>
+                  </div>
+                ))}
+              </div>
+              <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
+                Request a Demo →
+              </Link>
+            </div>
+
+            {/* Dashboard image — right */}
+            <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl group lg:order-2">
+              <Image
+                src="/smart-dashboard.png"
+                alt="Growmore Parking Smart Dashboard - real-time parking management control centre"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6">
+                <span className="bg-primary-600 text-white px-4 py-1.5 rounded-full text-sm font-semibold">
+                  📊 Smart Dashboard
+                </span>
               </div>
             </div>
           </div>
