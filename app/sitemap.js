@@ -9,6 +9,7 @@ export default function sitemap() {
     { path: '/about',                freq: 'monthly', priority: 0.8,  modified: '2026-03-01' },
     { path: '/contact',              freq: 'monthly', priority: 0.8,  modified: '2026-03-01' },
     { path: '/boom-barriers',        freq: 'weekly',  priority: 0.9,  modified: '2026-06-09' },
+    { path: '/smart-valet',          freq: 'weekly',  priority: 0.9,  modified: '2026-08-19' },
   ]
 
   return routes.map(({ path, freq, priority, modified }) => ({

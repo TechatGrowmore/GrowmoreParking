@@ -247,6 +247,129 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Smart Valet App Section */}
+      <section className="section-padding bg-white" id="smart-valet">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            {/* Content — left */}
+            <div className="space-y-6 lg:order-1">
+              <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest border border-green-200">
+                📲 New Product
+              </div>
+              <h2 className="heading-2">Smart Valet App</h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Optimize your valet parking operations &amp; allow your customers and visitors to request their car in advance — so they never have to wait at the valet desk.
+              </p>
+
+              {/* KPI strip */}
+              <div className="grid grid-cols-3 gap-4 bg-gray-900 rounded-2xl p-5 text-white">
+                {[
+                  { num: '700%+', label: 'Ticket Savings' },
+                  { num: '0 min', label: 'Guest Wait Time' },
+                  { num: '100%', label: 'Paperless' },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center">
+                    <div className="text-2xl font-black text-primary-400">{stat.num}</div>
+                    <div className="text-xs text-gray-400 mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  'Paperless QR-code ticketing — save 700%+ on tickets',
+                  'Guests request car in advance from their phone',
+                  'Valet manager gets instant notification & assigns driver',
+                  'Real-time car status updates for guests',
+                  'Live dashboard with driver & vehicle tracking',
+                  'No queues at valet desk — even during peak hours',
+                  'Eco-friendly reusable QR tickets',
+                  'Improves driver productivity & accountability',
+                ].map((b, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <FiCheckCircle className="text-primary-600 flex-shrink-0" size={18} />
+                    <span className="text-gray-700">{b}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap gap-4 pt-2">
+                <Link href="/smart-valet" className="btn-primary inline-flex items-center gap-2">
+                  View Full Details →
+                </Link>
+                <a
+                  href="https://wa.me/919321855377?text=Hi%20Growmore%20Parking%2C%20I%20am%20interested%20in%20a%20demo%20of%20your%20Smart%20Valet%20App.%20Please%20schedule%20a%20demo%20for%20me."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg"
+                >
+                  <FaWhatsapp size={18} /> Request a Demo
+                </a>
+              </div>
+            </div>
+
+            {/* Mock UI — right */}
+            <div className="relative lg:order-2">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-8 shadow-2xl text-white">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-2">
+                    <div className="w-9 h-9 bg-primary-600 rounded-xl flex items-center justify-center font-bold text-sm">SV</div>
+                    <div>
+                      <div className="font-bold text-sm">Smart Valet</div>
+                      <div className="text-xs text-gray-400">Valet Management App</div>
+                    </div>
+                  </div>
+                  <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">● Live</span>
+                </div>
+
+                <div className="bg-white bg-opacity-10 rounded-2xl p-4 mb-4">
+                  <div className="text-xs text-gray-400 mb-3 uppercase tracking-widest">Car Request Status</div>
+                  <div className="space-y-3">
+                    {[{label:'Request received',done:true,time:'6:14 PM'},{label:'Car is on its way',done:true,time:'6:16 PM'},{label:'Arrived',done:false,time:'ETA 2 min'}].map((item,i)=>(
+                      <div key={i} className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <div className={"w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 text-xs " + (item.done ? 'bg-primary-600 border-primary-600' : 'border-gray-500')}>
+                            {item.done && '✓'}
+                          </div>
+                          <span className={"text-sm " + (item.done ? 'text-white font-medium' : 'text-gray-500')}>{item.label}</span>
+                        </div>
+                        <span className="text-xs text-gray-400">{item.time}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  {[{icon:'▦',label:'QR Ticket'},{icon:'🔔',label:'Alerts'},{icon:'📊',label:'Dashboard'}].map((item,i)=>(
+                    <div key={i} className="bg-white bg-opacity-10 rounded-xl p-3 text-center">
+                      <div className="text-2xl mb-1">{item.icon}</div>
+                      <div className="text-xs text-gray-400">{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href="https://wa.me/919321855377?text=Hi%20Growmore%20Parking%2C%20I%20am%20interested%20in%20a%20demo%20of%20your%20Smart%20Valet%20App.%20Please%20schedule%20a%20demo%20for%20me."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-xl text-sm transition-colors"
+                >
+                  <FaWhatsapp size={16} /> Schedule a Demo
+                </a>
+              </div>
+
+              {/* Floating badges */}
+              <div className="absolute -top-4 -right-4 bg-primary-500 text-white px-4 py-2 rounded-2xl text-sm font-bold shadow-xl rotate-3">
+                🌿 Eco-friendly
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-yellow-400 text-yellow-900 px-4 py-2 rounded-2xl text-sm font-bold shadow-xl -rotate-2">
+                🔔 Zero Wait!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Boom Barriers Section */}
       <section className="section-padding bg-gray-50" id="boom-barriers">
         <div className="container-custom">

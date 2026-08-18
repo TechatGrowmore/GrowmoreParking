@@ -24,6 +24,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
     { name: 'Our Solutions', href: '/services' },
+    { name: 'Smart Valet App', href: '/smart-valet' },
     { name: 'Boom Barriers', href: '/boom-barriers' },
     { name: 'Contact', href: '/contact' },
   ]

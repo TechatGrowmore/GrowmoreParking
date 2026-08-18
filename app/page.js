@@ -183,7 +183,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Bottom row — Boom Barriers + Smart Dashboard */}
+          {/* Bottom row — Boom Barriers + Smart Valet App */}
           <div className="grid md:grid-cols-2 gap-8 mt-8">
 
             {/* Boom Barriers */}
@@ -196,7 +196,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-gray-900">Boom Barriers</h3>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Automatic boom barrier systems with RFID, ANPR, FASTag & QR-code integration. Installed across residential societies, corporate campuses, malls & toll plazas.
+                Automatic boom barrier systems with RFID, ANPR, FASTag &amp; QR-code integration. Installed across residential societies, corporate campuses, malls &amp; toll plazas.
               </p>
               <div className="grid grid-cols-2 gap-2 mb-6">
                 {['RFID & ANPR Ready', 'IP54 Weatherproof', '1.5s Opening Speed', 'Safety Sensors', 'FASTag Compatible', '1-Year Warranty'].map((f, i) => (
@@ -211,29 +211,39 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Smart Dashboard */}
+            {/* Smart Valet App */}
             <div className="card bg-white relative overflow-hidden border-2 border-primary-100 hover:border-primary-400 transition-all duration-300 group">
               <div className="absolute top-4 right-4">
-                <span className="bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-semibold">New</span>
+                <span className="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">New</span>
               </div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-2xl group-hover:bg-primary-600 transition-colors duration-300">📊</div>
-                <h3 className="text-2xl font-bold text-gray-900">Smart Dashboard</h3>
+                <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-2xl group-hover:bg-primary-600 transition-colors duration-300">📲</div>
+                <h3 className="text-2xl font-bold text-gray-900">Smart Valet App</h3>
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Real-time parking management dashboard — monitor vehicle entry/exit, boom barrier status, occupancy heatmaps, and revenue analytics from a single control centre.
+                Paperless QR ticketing, advance car requests &amp; real-time driver tracking. Guests request their car from their table — zero wait, zero paper tickets.
               </p>
               <div className="grid grid-cols-2 gap-2 mb-6">
-                {['Live Occupancy View', 'ANPR Camera Feeds', 'Revenue Analytics', 'Barrier Controls', 'Entry/Exit Logs', 'Instant Alerts'].map((f, i) => (
+                {['QR Code Tickets', 'Advance Car Request', 'Real-time Tracking', 'Live Dashboard', 'Save 700%+ on Tickets', 'Zero Queue at Desk'].map((f, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <FiCheckCircle className="text-primary-600 flex-shrink-0" size={14} />
                     <span className="text-sm text-gray-700">{f}</span>
                   </div>
                 ))}
               </div>
-              <Link href="/contact" className="btn-primary inline-flex items-center gap-2 text-sm py-2.5">
-                Request a Demo <FiArrowRight size={16} />
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link href="/smart-valet" className="btn-primary inline-flex items-center gap-2 text-sm py-2.5">
+                  Learn More <FiArrowRight size={16} />
+                </Link>
+                <a
+                  href="https://wa.me/919321855377?text=Hi%20Growmore%20Parking%2C%20I%20am%20interested%20in%20a%20demo%20of%20your%20Smart%20Valet%20App.%20Please%20schedule%20a%20demo%20for%20me."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold py-2.5 px-5 rounded-lg transition-all duration-300"
+                >
+                  <FaWhatsapp size={16} /> Request Demo
+                </a>
+              </div>
             </div>
           </div>
 
