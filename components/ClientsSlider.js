@@ -3,15 +3,18 @@
 import Image from 'next/image'
 
 const clients = [
-  { name: 'Muso',                       logo: '/clients/MuSo-Logo1_75_230x.png'  },
-  { name: 'Crompton',                   logo: '/clients/crompton_logo.webp'       },
-  { name: 'Bonito',                     logo: '/clients/Bonito_Logo.svg'          },
-  { name: 'JSW',                        logo: '/clients/JSW_Group_Logo.png'       },
-  { name: 'Lotus Banquet',              logo: '/clients/lotus-banquet.png'        },
-  { name: 'Mercedes-Benz',              logo: '/clients/Mercedes_logo.png'        },
-  { name: 'PMG Events',                 logo: '/clients/pmg_eventslogo.png'       },
-  { name: 'Café Quattro',               logo: '/clients/1000293448.png'           },
-  { name: 'Benne Heritage Bangalore',   logo: '/clients/1000293451.jpg'           },
+  { name: 'Muso', logo: '/clients/MuSo-Logo1_75_230x.png' },
+  { name: 'Crompton', logo: '/clients/crompton_logo.webp' },
+  { name: 'Bonito', logo: '/clients/Bonito_Logo.svg' },
+  { name: 'JSW', logo: '/clients/JSW_Group_Logo.png' },
+  { name: 'Lotus Banquet', logo: '/clients/lotus-banquet.png' },
+  { name: 'Mercedes-Benz', logo: '/clients/Mercedes_logo.png' },
+  { name: 'PMG Events', logo: '/clients/pmg_eventslogo.png' },
+  { name: 'Café Quattro', logo: '/clients/1000293448.png' },
+  { name: 'Benne Heritage Bangalore', logo: '/clients/1000293451.jpg' },
+  { name: 'Quattro Ristorante', logo: '/clients/quattroristorante.svg' },
+  { name: 'Spice Klub', logo: '/clients/spice-klub.png' },
+  { name: 'Mexicana Quattro', logo: '/clients/mexicana-quattro.svg' },
 ]
 
 // Duplicate the list so the marquee loops seamlessly
